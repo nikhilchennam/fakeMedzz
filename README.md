@@ -1,4 +1,4 @@
-# Fakequipo
+# fakeMedzz
 
 Fakequipo is a product authentication and consumer engagement company that helps in analysing counterfeit medicines. The main motto of our website is save people from being counterfeited.
 
@@ -11,7 +11,6 @@ Fakequipo is a product authentication and consumer engagement company that helps
 5. solidity
 6. HTML/CSS/JS
 7. Firebase
-8. IBM Watson Assistant
  
 ## Prerequisites
 
@@ -77,9 +76,7 @@ You're all set! Head to localhost:7545 or http://127.0.0.1:7545 on your browser 
 1. Solidity - Ethereum's smart contract programming language
 2. web3.js - Javascript library used to interact with the Ethereum blockchain
 
-## Team - De_facto Crypters
-Dharshini T 
-
-Swetha Lakshme S 
-
-Thoshinny B
+## Team - Monsters
+Nikhil Chennam
+Rahul
+Prashanth
