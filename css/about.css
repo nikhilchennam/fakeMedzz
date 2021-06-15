@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+.loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader>img {
+    width: 250px;
+}
+
+.loader.hidden {
+    animation: fadeOut 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 1;
+        visibility: hidden;
+    }
+}
+
+.services-section {
+    background: url('abtsection.jpg');
+    background-size: 100% 100%;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    padding: 0px 0px;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.inner-width {
+    width: 120%;
+    max-width: 1500px;
+    margin: auto;
+    padding: 0 -200px;
+    overflow: visible;
+}
+
+.section-title {
+    text-align: center;
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.section-title span {
+    text-align: center;
+    color: #82ccdd;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+.border0 {
+    width: 220px;
+    height: 2px;
+    background: #82ccdd;
+    margin: 25px auto;
+}
+
+.border {
+    width: 160px;
+    height: 2px;
+    background: #82ccdd;
+    margin: 25px auto;
+}
+
+.border1 {
+    width: 100px;
+    height: 2px;
+    background: #82ccdd;
+    margin: 25px auto;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.service-box {
+    max-width: 38.33%;
+    padding: 10px;
+    text-align: center;
+    color: #ddd;
+    cursor: pointer;
+    margin-right: 130px;
+    overflow-x: hidden;
+}
+
+.service-icon {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border: 3px solid #82ccdd;
+    color: #82ccdd;
+    transform: rotate(45deg);
+    margin-bottom: 30px;
+    margin-top: 70px;
+    transition: 0.3s linear;
+}
+
+.service-icon i {
+    line-height: 70px;
+    transform: rotate(-45deg);
+    font-size: 26px;
+}
+
+.service-box:hover .service-icon {
+    background: #82ccdd;
+    transform: rotate(270deg);
+    color: #ddd;
+}
+
+.service-title {
+    margin-top: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.service-desc {
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: cursive;
+}
+
+@media screen and (min-width:1024px) and (max-width:1366) {
+    .services-section {
+        background: url(abtsection.gif);
+        max-width: 850px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .services-section {
+        background: url(abtsection.gif);
+        max-width: 850px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .service-box {
+        width: 65.33%;
+        padding: 8px;
+        text-align: center;
+        color: #ddd;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .service-desc {
+        margin-top: 20px;
+        font-size: 15px;
+        font-family: cursive;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .service-box {
+        max-width: 40%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .service-box {
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .service-box {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+html,
+body {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    text-align: center;
+    background: linear-gradient(#f6ebe6, #aee1f9)
+}
+
+.slider {
+    max-width: 1100px;
+    display: flex;
+}
+
+.slider .card {
+    flex: 1;
+    margin: 0 10px;
+    background: linear-gradient(#7ee8fa, #eec0c6);
+    border-radius: 2px;
+}
+
+.slider .card .img {
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.slider .card .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slider .card .content {
+    padding: 10px 20px;
+}
+
+.card .content .title {
+    color: #0f0f0f;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.card .content .sub-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #045de9;
+    margin-top: -10px;
+    line-height: 20px;
+}
+
+.card .content p {
+    color: #3b3c36;
+    text-align: justify;
+    margin: 10px 0;
+}
+
+.card .content .btn {
+    display: block;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.card .content .btn button {
+    background: linear-gradient(#009ffd, #2a2a72);
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.card .content .btn button:hover {
+    transform: scale(0.9);
+}

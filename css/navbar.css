@@ -1,0 +1,59 @@
+
+    .header{
+      font-family: cursive;
+      padding-top: 20px;
+      padding-left: 20px;
+     }
+     .logo{
+       float:right;
+       padding-top: 30px;
+     }
+     #mainbox{
+      font-size: 30px; 
+      color:antiquewhite;
+      background:linear-gradient(#6d17cb , #2876f9);
+      cursor: pointer;
+      transition: all .6s; 
+      width: 40px; 
+      
+      border-radius: 3px;
+     }
+     .sidemenu{
+      position: fixed;
+      top: 00px;
+      left: 0px;
+      height: 100%;
+      width: 0px; 
+      background: linear-gradient(transparent,  #00a4e4  , #aee1f9);
+      z-index: 1;
+      padding-top: 80px; 
+      overflow-x: hidden;
+      transition: all .5s;
+     }
+     .sidemenu a{
+      padding: 30px 30px 30px 55px;
+      text-decoration: none;
+      font-size: 22px;
+      color: black;
+      display: block; 
+      margin-right: -10px;
+     }
+     .sidemenu a:hover{
+       color: black;  
+       text-decoration: underline; 
+     } 
+     .sidemenu .closebtn{
+        position: absolute;
+        top: 0px;
+        right: 25px;
+        font-size: 55px; 
+        font-weight: 1000px; 
+        text-decoration: none; 
+        color:black;  
+        font-family: 'Courier New', Courier, monospace;
+        margin-left: 32px;
+     } 
+     .sidemenu .closebtn:hover{
+       text-decoration: none; 
+
+     }

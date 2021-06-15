@@ -1,0 +1,24 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is up to date with 'origin/main'.
+#
+# Changes to be committed:
+#	modified:   addmedicineforms.html
+#	modified:   build/contracts/DistributorRole.json
+#	modified:   build/contracts/ManufacturerRole.json
+#	modified:   build/contracts/Migrations.json
+#	modified:   build/contracts/Ownable.json
+#	modified:   build/contracts/Roles.json
+#	modified:   build/contracts/UserRole.json
+#	modified:   build/contracts/main.json
+#	modified:   detailsdisplay.html
+#	modified:   js/web3.min.js
+#	modified:   package-lock.json
+#	modified:   package.json
+#
+# Untracked files:
+#	qr code generator/~$qr code modified.xlsx
+#

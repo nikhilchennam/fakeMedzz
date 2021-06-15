@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navpage.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <link rel="stylesheet" href="css/footerpage.css">
+</head>
+
+<body>
+    <div class="loader">
+        <img src="images/index/dose-rx-icons.gif" alt="Loading..." />
+    </div>
+    <header></header>
+    <div id="side-nav" style="right:-200px">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a>
+                    <li>
+                        <li><a href="signinregister.html">SignIn/Register</a></li>
+                        <li><a href="companylist.html">Top Pharma Companies</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blogpage.html">Blog</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                        <li><a href="index.html">Logout</a></li>
+            </ul>
+        </nav>
+        <div id="menu-btn">
+            <img src="images/resources/menu.png" id="menu">
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="title">
+            Manufacturer Registration Form
+        </div>
+        <form id="manufacturerform" action="" method="GET">
+            <div class="inputs">
+                <div class="inputfield">
+                    <label>First Name:</label>
+                    <input id="fname" type="text" class="input" required>
+                </div>
+                <div class="inputfield">
+                    <label>Last Name:</label>
+                    <input id="lname" type="text" class="input" required>
+                </div>
+                <div class="inputfield">
+                    <label>Email Address:</label>
+                    <input id="emailid" type="text" class="input" required>
+                </div>
+                <div class="inputfield">
+                    <label>Company Name:</label>
+                    <input id="cname" type="text" class="input" required>
+                </div>
+                <div class="inputfield">
+                    <label>Company Address:</label>
+                    <textarea id="caddress" class="textarea" required></textarea>
+                </div>
+                <div class="inputfield">
+                    <label>Postal Code:</label>
+                    <input id="postalcode" type="text" class="input" required>
+                </div>
+                <div class="inputfield">
+                    <label>No. of medicines manufactured in a year:</label>
+                    <input id="medno" type="text" class="input" required>
+                </div>
+                <div class="inputfield">
+                    <label>Phone Number:</label>
+                    <input id="phno" type="text" class="input" required>
+                </div>
+                <div class="inputfield">
+                    <label>Government License:</label>
+                    <input id="govlic" type="file" name="f" required>
+                </div>
+                <div class="inputfield terms">
+                    <label class="check">
+            <input type="checkbox" required>
+            <span class="checkmark"></span>
+          </label>
+                    <p>Agreed to terms and conditions</p>
+                </div>
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+
+    <script src="js/manufacturerRegAuth.js"></script>
+    <!--<div class="bordersep"></div>
+    <footer>
+        <div class=" footer-container">
+            <div class="left-col">
+                <!--<img src="logo.png" alt="" class="logo">
+    <h1>F<span>akeQuipo</span></h1>
+    <div class="social-media">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p class="rights-text">© 2020 Created By De_facto Crypters All Rights Reserved.</p>
+    </div>
+
+    <div class="right-col">
+        <h1>Our Newsletter</h1>
+
+        <p>Enter Your Email to get our news and updates.</p>
+        <form action="" class="newsletter-form">
+            <input type="text" class="txtbx" placeholder="Enter Your Email">
+            <input type="submit" class="btnsubmit" placeholder="submit">
+        </form>
+    </div>
+    </div>
+    </footer> -->
+    <script>
+        window.addEventListener("load", function() {
+            const loader = document.querySelector(".loader");
+            loader.className += " hidden"; // class "loader hidden"
+        });
+    </script>
+</body>
+<script src="js/navbarscript.js"></script>
+
+</html>

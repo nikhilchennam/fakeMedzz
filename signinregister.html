@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/signinregister.css">
+    <link rel="stylesheet" href="css/navpage.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/footerpage.css">
+</head>
+
+<body>
+    <div id="side-nav" style="right:-200px">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a>
+                    <li>
+                        <li><a href="signinregister.html">SignIn/Register</a></li>
+                        <li><a href="companylist.html">Top Pharma Companies</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blogpage.html">Blog</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                        <li><a href="index.html">Logout</a></li>
+            </ul>
+        </nav>
+        <div id="menu-btn">
+            <img src="images/resources/menu.png" id="menu">
+        </div>
+    </div>
+    <div class="slider owl-carousel">
+        <div class="card">
+            <div class="img">
+                <img src="images/signinregister/consumer.jpg" alt=""></div>
+            <div class="content">
+                <div class="title">
+                    Consumer</div>
+                <div class="sub-title">
+                    _______________</div>
+                <p>Consumers can signin or register to our website by clicking Consumer button and can check whether the medicine in their hands is placebo just by simple Qr code scanning..
+                </p>
+                <div class="btn">
+                    <a href="consumerSignin.html">
+                        <button>Consumer</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="images/signinregister/manufacturer.jpg" alt=""></div>
+            <div class="content">
+                <div class="title">
+                    Manufacturer</div>
+                <div class="sub-title">
+                    _________________</div>
+                <p>
+                    Manufacturers can signin or register to our website by clicking Manufacturer button and can download their medicine's Qr code image. Just by following simple steps..</p>
+                <div class="btn">
+                    <a href="manufacturerSignin.html">
+                        <button>Manufacturer</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="images/signinregister/supplier.jpg" alt=""></div>
+            <div class="content">
+                <div class="title">
+                    Supplier</div>
+                <div class="sub-title">
+                    _______________</div>
+                <p>
+                    Supplier can signin or register to our website by clicking Supplier button and can check the medicines they received is placebo just by simple scanning the Qr code printed on medicine..</p>
+                <div class="btn">
+                    <a href="supplierSignin.html">
+                        <button>Supplier</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(".slider").owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 5000, //5000ms = 5s;
+            autoplayHoverPause: true,
+        });
+    </script>
+    <!--<div class="bordersep"></div>
+    <footer>
+        <div class=" footer-container">
+            <div class="left-col">
+                <!--<img src="logo.png" alt="" class="logo">
+    <h1>F<span>akeQuipo</span></h1>
+    <div class="social-media">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p class="rights-text">© 2020 Created By De_facto Crypters All Rights Reserved.</p>
+    </div>
+
+    <div class="right-col">
+        <h1>Our Newsletter</h1>
+
+        <p>Enter Your Email to get our news and updates.</p>
+        <form action="" class="newsletter-form">
+            <input type="text" class="txtbx" placeholder="Enter Your Email">
+            <input type="submit" class="btnsubmit" placeholder="submit">
+        </form>
+    </div>
+    </div>
+    </footer> -->
+
+</body>
+<script src="js/navbarscript.js"></script>
+
+</html>

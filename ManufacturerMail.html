@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<script src="manufacturerReg.html"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    Email.send({
+        Host:"smtp.gmail.com",
+        Username:"noreplyfakemedzz@gmail.com",
+        Password:"fakemedzz@123",
+        To : "sec19cs051@sairamtap.edu.in",
+        From : "noreplyfakemedzz@gmail.com",
+        Subject : "Fakemedzz Confirmation",
+        Body : "Hello, Your registration in our website is successful. Kindly please do fill the google sheets given below.\n https://docs.google.com/spreadsheets/d/19niEJHfOhXpWd6hhxLSaUClqKoPqdRkU9R3CWN8YeDU/edit?usp=sharing\n Regards, \n Fakequipo Team",
+
+    }).then(
+        window.alert("Check your mail for further details"),
+        window.location.href="index.html");
+
+</script>
+</body>

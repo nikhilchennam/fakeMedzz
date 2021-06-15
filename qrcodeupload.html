@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>QRCode</title>
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/qrcodeupload.css">
+    <link rel="stylesheet" href="css/navpage.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <!-- <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script> -->
+
+</head>
+
+<body>
+    <div class="loader">
+        <img src="images/index/dose-rx-icons.gif" alt="Loading..." />
+    </div>
+    <header></header>
+    <!--<header>
+        <div class="navigation-container">
+            <div class="top-head">
+                <div class="web-name">
+                    <h1>FAKEQUIPO</h1>
+                </div>
+                <div class="ham-btn">
+                    <span>
+                            <i class = "fas fa-bars"></i>
+                        </span>
+                </div>
+                <div class="times-btn">
+                    <span>
+                            <i class = "fas fa-times"></i>
+                        </span>
+                </div>
+            </div> -->
+
+    <!-- nav bar -->
+
+    <!-- <div class="nav-bar" id="nav-bar">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">SignIn/Register</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!--social icons 
+            <div class="social-icons">
+                <ul>
+                    <li>
+                        <a href="#"><i class = "fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class = "fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class = "fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class = "fab fa-youtube"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header> -->
+    <div id="side-nav" style="right:-200px">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a>
+                    <li>
+                        <li><a href="signinregister.html">SignIn/Register</a></li>
+                        <li><a href="companylist.html">Top Pharma Companies</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blogpage.html">Blog</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                        <li><a href="index.html">Logout</a></li>
+            </ul>
+        </nav>
+        <div id="menu-btn">
+            <img src="images/resources/menu.png" id="menu">
+        </div>
+    </div>
+    <div class="content">
+
+        <div class="banner-image">
+            <div class="inner-banner-image">
+                <div class="banner-image-content">
+                    <h1>FakeMedzz</h1><br>
+                    <p>QR Code Scanner</p><br>
+                    <a href="#boxc"> <button class="button">Click here</button></a>
+                </div>
+            </div>
+        </div>
+        <a id="boxc"></a>
+        <section class="box1" style="background-image: url(images/scan-qr-code-with-laptop-smartphone.jpg);background-size: cover; height: 980px; padding: top 30px;">
+            <!-- <div style="background-image: url('qr-code-scanning-concept.jpg');"></div> -->
+            <!-- <section class="box1"> -->
+            <div class="inner-banner-image1">
+                <div class="banner-image-content1">
+                    <form role="form" id="form" action="" method="GET">
+                        <h1 style="text-align: center;color:white; padding-top: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                        font-style: italic;
+                        font-weight: bold;">Upload QR Code here</h1>
+                        <div class="imgalign">
+                            <img src="https://www.allgeo.com/newtemp/images/t3/qr3.gif">
+                        </div>
+                        <div id="box">
+
+                            <input class="file__upload" type="file" name="file" id="file" required>
+                            <button class="btn" onclick="val();" required>submit</button>
+
+                           <p style="margin-right:20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                            font-style: italic;color:white;font-weight: bold;font-size:25px;">Medcine Details: <span id="content"></span></p>
+                            <br>
+                            <!--To Read QR code -->
+                            <script type="text/javascript" src="js/qrReader.js"></script>
+
+                            <!-- <input class="qrcode" type="text" id="scan" placeholder="Code" style="background:transparent; color:white;box-shadow: inset 0 3px 5px rgb(0 0 0 / 13%);">
+                            <input class="btn" type="submit" value="Submit"> -->
+                            <div class="medicinedisplay">
+                                <h1 style="padding-top:20px;color:white;"></h1>
+                                <br>
+                                <div class="banner-image-content2">
+                                    <p id="medicines1"></p>
+                                    <p id="medicines2"></p>
+                                    <p id="medicines3"></p>
+                                    <p id="medicines4"></p>
+                                    <p id="medicines5"></p>
+                                    <!--p id="medicines6"></p-->
+                                    <p id="medicine7"></p>
+                                    <p id="medicines8"></p>
+                                    <p id="medicines9"></p>
+                                    <p id="medicines10"></p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                    <script>
+                        function val() {
+                            var item = document.getElementById("content").innerText;
+                            document.getElementById("scan").value = item;
+                        }
+                        // function val1(){
+                        //     window.location.href="detailsdisplay.html";
+                        // }
+                    </script>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract copy.js"></script>
+    <script>
+        if (typeof web3 !== 'undefined') {
+            web3 = new Web3(web3.currentProvider);
+        } else {
+            web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:7545'));
+        }
+
+        // Set Contract Abi
+        var contractAbi = [{
+            "anonymous": false,
+            "inputs": [{
+                "indexed": true,
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            }],
+            "name": "DistributorAdded",
+            "type": "event"
+        }, {
+            "anonymous": false,
+            "inputs": [{
+                "indexed": true,
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            }],
+            "name": "DistributorRemoved",
+            "type": "event"
+        }, {
+            "anonymous": false,
+            "inputs": [{
+                "indexed": false,
+                "internalType": "string",
+                "name": "_batchno",
+                "type": "string"
+            }],
+            "name": "Made",
+            "type": "event"
+        }, {
+            "anonymous": false,
+            "inputs": [{
+                "indexed": true,
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            }],
+            "name": "ManufacturerAdded",
+            "type": "event"
+        }, {
+            "anonymous": false,
+            "inputs": [{
+                "indexed": true,
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            }],
+            "name": "ManufacturerRemoved",
+            "type": "event"
+        }, {
+            "anonymous": false,
+            "inputs": [{
+                "indexed": false,
+                "internalType": "string",
+                "name": "_batchno",
+                "type": "string"
+            }],
+            "name": "Packed",
+            "type": "event"
+        }, {
+            "anonymous": false,
+            "inputs": [{
+                "indexed": false,
+                "internalType": "string",
+                "name": "_batchno",
+                "type": "string"
+            }],
+            "name": "Sold",
+            "type": "event"
+        }, {
+            "anonymous": false,
+            "inputs": [{
+                "indexed": true,
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            }],
+            "name": "UserAdded",
+            "type": "event"
+        }, {
+            "anonymous": false,
+            "inputs": [{
+                "indexed": true,
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            }],
+            "name": "UserRemoved",
+            "type": "event"
+        }, {
+            "constant": false,
+            "inputs": [{
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            }],
+            "name": "addDistributor",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }, {
+            "constant": false,
+            "inputs": [{
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            }],
+            "name": "addManufacturer",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }, {
+            "constant": false,
+            "inputs": [{
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            }],
+            "name": "addUser",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }, {
+            "constant": true,
+            "inputs": [{
+                "internalType": "string",
+                "name": "_batchno",
+                "type": "string"
+            }],
+            "name": "fetchMedicineBufferOne",
+            "outputs": [{
+                "internalType": "string",
+                "name": "batchno",
+                "type": "string"
+            }, {
+                "internalType": "string",
+                "name": "medicineName",
+                "type": "string"
+            }, {
+                "internalType": "address",
+                "name": "ownerID",
+                "type": "address"
+            }, {
+                "internalType": "address",
+                "name": "originManufacturerID",
+                "type": "address"
+            }, {
+                "internalType": "string",
+                "name": "dosage",
+                "type": "string"
+            }, {
+                "internalType": "enum main.State",
+                "name": "medicineState",
+                "type": "uint8"
+            }],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        }, {
+            "constant": true,
+            "inputs": [{
+                "internalType": "string",
+                "name": "_batchno",
+                "type": "string"
+            }],
+            "name": "fetchMedicineBufferTwo",
+            "outputs": [{
+                "internalType": "string",
+                "name": "batchno",
+                "type": "string"
+            }, {
+                "internalType": "string",
+                "name": "FactoryName",
+                "type": "string"
+            }, {
+                "internalType": "string",
+                "name": "mfgdate",
+                "type": "string"
+            }, {
+                "internalType": "string",
+                "name": "expdate",
+                "type": "string"
+            }, {
+                "internalType": "address",
+                "name": "distributorID",
+                "type": "address"
+            }, {
+                "internalType": "address",
+                "name": "userID",
+                "type": "address"
+            }],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        }, {
+            "constant": true,
+            "inputs": [{
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            }],
+            "name": "isDistributor",
+            "outputs": [{
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+            }],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        }, {
+            "constant": true,
+            "inputs": [{
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            }],
+            "name": "isManufacturer",
+            "outputs": [{
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+            }],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        }, {
+            "constant": true,
+            "inputs": [{
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            }],
+            "name": "isUser",
+            "outputs": [{
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+            }],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        }, {
+            "constant": false,
+            "inputs": [{
+                "internalType": "string",
+                "name": "_batchno",
+                "type": "string"
+            }, {
+                "internalType": "string",
+                "name": "_medicineName",
+                "type": "string"
+            }, {
+                "internalType": "string",
+                "name": "_dosage",
+                "type": "string"
+            }, {
+                "internalType": "address",
+                "name": "_originManufacturerID",
+                "type": "address"
+            }, {
+                "internalType": "address",
+                "name": "_ownerID",
+                "type": "address"
+            }, {
+                "internalType": "string",
+                "name": "_FactoryName",
+                "type": "string"
+            }, {
+                "internalType": "string",
+                "name": "_mfgdate",
+                "type": "string"
+            }, {
+                "internalType": "string",
+                "name": "_expdate",
+                "type": "string"
+            }, {
+                "internalType": "enum main.State",
+                "name": "Made",
+                "type": "uint8"
+            }, {
+                "internalType": "address",
+                "name": "_distributorID",
+                "type": "address"
+            }, {
+                "internalType": "address",
+                "name": "_userID",
+                "type": "address"
+            }],
+            "name": "makeMedicine",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }, {
+            "constant": false,
+            "inputs": [{
+                "internalType": "string",
+                "name": "_batchno",
+                "type": "string"
+            }],
+            "name": "packMedicine",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }, {
+            "constant": false,
+            "inputs": [{
+                "internalType": "string",
+                "name": "_batchno",
+                "type": "string"
+            }],
+            "name": "receiveMedicine",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }, {
+            "constant": false,
+            "inputs": [],
+            "name": "renounceDistributor",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }, {
+            "constant": false,
+            "inputs": [],
+            "name": "renounceManufacturer",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }, {
+            "constant": false,
+            "inputs": [],
+            "name": "renounceUser",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }]; // Add Your Contract ABI here!!!
+
+        // Set Contract Address
+        var contractAddress = '0x16e154A3B32140052AEe89697BfB7227f2F668D8'; // Add Your Contract address here!!!
+
+        // Set the Contract
+        var contract = new web3.eth.Contract(contractAbi, contractAddress);
+        $('form').on('submit', function(event) {
+            event.preventDefault();
+            batchno = $("#scan").val();
+            console.log(batchno)
+                //Display the Medicine
+            contract.methods.fetchMedicineBufferOne(batchno).call(function(err, result) {
+                console.log(err, result)
+                    /*document.write(result[0] + "\n")
+                    document.write("<br>" + result[1] + "<br>")
+                    document.write(result[2] + "<br>")
+                    document.write(result[3] + "<br>")
+                    document.write(result[4] + "<br>")*/
+                if (result[0] == "") {
+
+                    $("#medicines1").text('QR Code is invalid. Your Medicine is FALSIFIED!!!!' + "\r");
+                } else {
+
+                    $("#medicines1").text('Batch No: ' + "\r" + result[0]);
+                    $("#medicines2").text('Medicine Name: ' + '\r' + result[1]);
+                    $("#medicines3").text('Manufacturer ID:' + '\r' + result[2]);
+                    $("#medicines4").text('Supplier ID:' + '\r' + result[3]);
+                    $("#medicines5").text('Dosage:  ' + '\r' + result[4]);
+                }
+
+            });
+            contract.methods.fetchMedicineBufferTwo(batchno).call(function(err, result) {
+                console.log(err, result)
+                    //document.write(result.toString().trim())
+                    //$("#medicines6").text(result[0]);
+                    // document.write(result[1] + "<br>")
+                    // document.write(result[2] + "<br>")
+                    // document.write(result[3] + "<br>")
+                    // document.write(result[4] + "<br>")
+                if (result[0] == "") {
+
+
+                } else {
+                    $("#medicine7").text('Manufacturing Date:' + '\r' + result[1]);
+                    $("#medicines8").text('Expiry Date:' + '\r' + result[2]);
+                    $("#medicines9").text('Company Name: ' + '\r' + result[3]);
+                    $("#medicines10").text('Consumer ID:' + '\r' + result[4]);
+                }
+
+            });
+        });
+    </script>
+    <script>
+        window.addEventListener("load", function() {
+            const loader = document.querySelector(".loader");
+            loader.className += " hidden"; // class "loader hidden"
+        });
+    </script>
+
+</body>
+<!-- <footer>
+    <div class="container">
+        <p>Copyright &copy; Fakequipo. All Rights Reserved | Contact Us: +91 90000 00000</p>
+    </div>
+</footer> -->
+<!-- <script src="qrcodeupload.js" async defer></script> -->
+<script src="js/navbarscript.js"></script>
+
+</html>

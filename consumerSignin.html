@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SignUp and Login</title>
+    <link rel="stylesheet" type="text/css" href="css/consumerStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div id="sign-up" class="form-container sign-up-container">
+
+            <form id="sign-up-form" action="">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="social"><i class="fa fa-google"></i></a>
+                    <a href="#" class="social"><i class="fa fa-phone"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <input id="signup-name" type="text" name="name" placeholder="Consumer Name">
+                <input id="signup-email" type="email" name="email" placeholder="Consumer Email">
+                <input id="signup-password" type="password" name="password" placeholder="Password">
+                <button>SignUp</button>
+            </form>
+        </div>
+        <div id="sign-in" class="form-container sign-in-container">
+            <form id="signin-form" action="">
+                <h1>Sign In</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="social"><i class="fa fa-google"></i></a>
+                    <a href="#" class="social"><i class="fa fa-phone"></i></a>
+                </div>
+                <span>or use your account</span>
+                <input id="signin-email" type="email" name="email" placeholder="Registered Email">
+                <input id="signin-password" type="password" name="password" placeholder="Password">
+                <a href="#">Forgot Your Password</a>
+
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello Users</h1>
+                    <p>Enter your details</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyDXbo8Imcajm_SXhlWGk1yuFs5UtMddS_E",
+            authDomain: "fakequipo.firebaseapp.com",
+            projectId: "fakequipo",
+            storageBucket: "fakequipo.appspot.com",
+            messagingSenderId: "349938056544",
+            appId: "1:349938056544:web:d05427df2f272bf021b205",
+            measurementId: "G-8NLHJG8EXZ"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        //make auth references 
+        const auth = firebase.auth();
+    </script>
+
+    <script type="text/javascript">
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+
+        signUpButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+        });
+        signInButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");
+        });
+    </script>
+    <script src="js/consumerAuth.js"></script>
+
+</body>
+
+</html>

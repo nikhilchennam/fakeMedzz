@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+.loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader>img {
+    width: 250px;
+}
+
+.loader.hidden {
+    animation: fadeOut 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 1;
+        visibility: hidden;
+    }
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: whitesmoke;
+    background-image: linear-gradient(to top, #6fa6e6 0%, #b388e6fa 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.file__upload {
+    width: 400px;
+    height: 445px;
+    margin: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .3);
+}
+
+.file__upload .header {
+    width: 100%;
+    height: 145px;
+    background: rgba(80, 5, 99, 0.664);
+    background-image: linear-gradient(to right, #1a77ad 0%, #2f0df1 100%);
+    opacity: 1.5;
+    opacity: 1.5;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 5px 0 0;
+}
+
+.file__upload .header p {
+    color: #FFF;
+}
+
+.file__upload .header p i.fa {
+    margin-right: 10px;
+}
+
+.file__upload .header p span {
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.file__upload .header p span span {
+    font-weight: 100;
+}
+
+.file__upload .body {
+    background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    width: 100%;
+    height: calc(100% - 145px);
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.file__upload .body input[type="file"] {
+    opacity: 0;
+}
+
+.file__upload .body i.fa {
+    color: #d3d3d3;
+    margin-bottom: 20px;
+}
+
+.file__upload .body p strong {
+    color: rgb(61, 11, 119);
+}
+
+.file__upload .body p span {
+    color: rgb(61, 11, 119);
+    text-decoration: underline;
+}
+
+.btn {
+    background: rgb(61, 11, 119);
+    background-image: linear-gradient(to right, #1a77ad 0%, #2f0df1 100%);
+    border: none;
+    outline: none;
+    margin: 20px 0;
+    padding: .7rem 2rem;
+    font-size: 1.3rem;
+    color: #FFF;
+    border-radius: 3px;
+    opacity: .8;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+#link_checkbox {
+    display: none;
+}
+
+#link {
+    border: 1px solid;
+    color: rgb(61, 11, 119);
+    background: none;
+    width: calc(100% - 20px);
+    border-radius: 0;
+    outline: none;
+    padding: 10px;
+    font-size: 1rem;
+    margin: 10px 0;
+    display: none;
+}
+
+#link_checkbox:checked~#link {
+    display: block;
+}
+
+label[for="link_checkbox"] {
+    padding: .5rem 2rem;
+    background: rgb(61, 11, 119);
+    color: #FFF;
+    outline: none;
+    cursor: pointer;
+}
+
+.download .download_link {
+    text-decoration: none;
+    color: #FFF;
+    background: rgb(61, 11, 119);
+    padding: .5rem 2rem;
+    border-radius: 3px;
+    opacity: .8;
+    transition: .3s;
+}
+
+.download .download_link:hover {
+    opacity: 1;
+}
