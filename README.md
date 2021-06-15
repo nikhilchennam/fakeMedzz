@@ -1,6 +1,6 @@
 # fakeMedzz
 
-Fakequipo is a product authentication and consumer engagement company that helps in analysing counterfeit medicines. The main motto of our website is save people from being counterfeited.
+FakeMedzz is a product authentication and consumer engagement company that helps in analysing counterfeit medicines. The main motto of our website is save people from being counterfeited.
 
 
 ## Tech Stack
@@ -45,7 +45,7 @@ To run this on your local system, follow these steps:
      run dev
       
 ```
-You're all set! Head to localhost:7545 or http://127.0.0.1:7545 on your browser to check out 'Fakequipo'.
+You're all set! Head to localhost:7545 or http://127.0.0.1:7545 on your browser to check out 'FakeMedzz'.
 
 ## Start Development
 1. Start new terminal tab and start compiling contract codes
