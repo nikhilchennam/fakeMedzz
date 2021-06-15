@@ -25,7 +25,7 @@ To run this on your local system, follow these steps:
 
 1. Clone this repository.
 ```
-      https://github.com/Dharshini1810/FakeQuipo.git
+      https://github.com/nikhilchennam/fakeMedzz.git
 ```
 
 2. Install all the dependencies.
@@ -78,5 +78,7 @@ You're all set! Head to localhost:7545 or http://127.0.0.1:7545 on your browser 
 
 ## Team - Monsters
 Nikhil Chennam
+
 Rahul
+
 Prashanth
